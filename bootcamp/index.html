@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1, width=device-width" />
-
+ 
     <link rel="stylesheet" href="./global.css" />
     <link rel="stylesheet" href="./index.css" />
     <link
@@ -115,7 +115,7 @@
                       <div class="free">Free</div>
                     </div>
                   </div>
-                  <div class="button-group">
+                  <div class="button-group" style="margin-top: 20px;">
                     <button class="button2">
                       <div class="register-now">Register Now</div>
                     </button>
@@ -598,9 +598,9 @@
         <div class="love-from-our-alumni-parent">
           <h1 class="love-from-our">Love from our alumni</h1>
           <div class="component-209-wrapper">
-            <div class="component-209">
+            <div class="component-209 gallery-wrapper">  <!--  gallery wrapper -->
               <div class="sequence-combiner">
-                <div class="wrapper-course-button-left">
+                <div id="left" class="wrapper-course-button-left">
                   <img
                     class="course-button-left"
                     alt=""
@@ -608,8 +608,8 @@
                   />
                 </div>
               </div>
-              <div class="component-209-inner">
-                <div class="test01-1-parent">
+              <div class="component-209-inner ">  <!-- gallery -->
+                <div class="test01-1-parent gallery">
                   <div class="test01-1">
                     <div class="variable-node1">
                       <div class="operator-node">
@@ -1400,7 +1400,7 @@
                 </div>
               </div>
               <div class="sequence-combiner1">
-                <div class="wrapper-course-butto-right">
+                <div id="right" class="wrapper-course-butto-right">
                   <img
                     class="course-butto-right"
                     alt=""
@@ -1452,10 +1452,10 @@
         </div>
         <div class="our-partnership-parent">
           <h1 class="our-partnership">Our partnership</h1>
-          <div class="component-217-wrapper">
-            <div class="component-217">
+          <div class="component-217-wrapper  ">
+            <div class="component-217 gallery-wrapperr"  style="margin-left: 20rem;">
               <div class="wrapper-partner-button-parent">
-                <div class="wrapper-partner-button">
+                <div id="leftie" class="wrapper-partner-button">
                   <img
                     class="partner-button-icon"
                     alt=""
@@ -1464,7 +1464,7 @@
                 </div>
                 <div class="frame-wrapper5">
                   <div class="frame-wrapper6">
-                    <div class="sub-container-parent">
+                    <div class="sub-container-parent galleryy">
                       <div class="sub-container">
                         <img
                           class="d936b24937e7ac4e10ce0-aws-comm-icon"
@@ -1579,7 +1579,7 @@
                     </div>
                   </div>
                 </div>
-                <img
+                <img id="rightie"
                   class="partner-button-icon1"
                   alt=""
                   src="./public/partner-button-1@2x.png"
@@ -2105,5 +2105,38 @@
         </button>
       </div>
     </div>
+    <script>
+      let scrollContainer = document.querySelector('.gallery')
+      let left = document.getElementById('left')
+      let right = document.getElementById('right')
+
+      scrollContainer.addEventListener("click", (evt) => {
+        e.preventDefault();
+        scrollContainer.scrollLeft += evt.deltaY
+      })
+      left.addEventListener("click", () => {
+        scrollContainer.style.scrollBehaviour = "smooth"
+        scrollContainer.scrollLeft += 900
+      })
+      right.addEventListener("click", () => {
+        scrollContainer.style.scrollBehaviour = "smooth"
+        scrollContainer.scrollLeft -= 900
+      })
+
+      let scrollContainerr = document.querySelector('.galleryy')
+let leftie = document.getElementById('leftie');
+let rightie = document.getElementById('rightie');
+
+// Listen for clicks on arrows
+leftie.addEventListener("click", () => {
+  scrollContainerr.style.scrollBehavior = "smooth";
+  scrollContainerr.scrollLeft -= 900; // Adjust value for slide width
+});
+
+rightie.addEventListener("click", () => {
+  scrollContainerr.style.scrollBehavior = "smooth";
+  scrollContainerr.scrollLeft += 900; // Adjust value for slide width
+});
+    </script>
   </body>
 </html>

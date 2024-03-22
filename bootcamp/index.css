@@ -5439,6 +5439,24 @@
   align-items: flex-start;
   justify-content: flex-start;
 }
+
+.gallery::-webkit-scrollbar{
+  display: none;
+}
+
+.galleryy::-webkit-scrollbar{
+  display: none;
+}
+
+
+#left, #right{
+  cursor: pointer;
+}
+
+#leftie, #rightie{
+  cursor: pointer;
+}
+
 .test01-1-parent {
   width: 1244px;
   overflow-x: auto;
@@ -5914,7 +5932,7 @@
   gap: 44.55844497680664px;
 }
 .sub-container-parent {
-  width: 1191.2px;
+  width: 950.2px;
   overflow-x: auto;
   flex-shrink: 0;
   gap: 105.95000000000071px;
@@ -5945,7 +5963,7 @@
   width: 56.3px;
   position: absolute;
   margin: 0 !important;
-  right: 862.4px;
+  right: 750px;
   bottom: 164.3px;
   flex-shrink: 0;
   object-fit: contain;

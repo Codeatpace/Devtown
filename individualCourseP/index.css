@@ -475,10 +475,11 @@
   top: 0;
   right: 333.6px;
   justify-content: center;
-  padding: 70px var(--padding-0) var(--padding-0);
+  /* padding: 70px var(--padding-0) var(--padding-0); */
   z-index: 2;
 }
 .bottom-promotion-bar {
+  background: radial-gradient(50% 50% at 50% 50%, #121e37, #080d17);
   align-self: stretch;
   justify-content: flex-end;
   padding: 689px var(--padding-0) var(--padding-0);
@@ -540,7 +541,7 @@
   border: 0.6px solid var(--white-100);
   padding: 18.40000000000003px 53px 18.399999999999977px;
   background-color: transparent;
-  flex: 0.6344;
+  /* flex: 0.6344; */
   border-radius: 9.41px;
   box-sizing: border-box;
   display: flex;
@@ -3140,7 +3141,7 @@
 }
 .filter-tree {
   width: 2108px;
-  overflow-x: auto;
+  /* overflow-x: auto; */
   padding: var(--padding-0) var(--padding-559xl);
   gap: var(--gap-xl);
   max-width: 100%;
@@ -9730,23 +9731,24 @@
 .branch-parent,
 .component-167 {
   flex-direction: row;
-  align-items: flex-start;
+  align-items: flex-end;
 }
 .branch-parent {
   align-self: stretch;
   width: 1530px;
   overflow-x: auto;
   justify-content: flex-start;
+  /* margin-right: 100%; */
   padding: var(--padding-0) var(--padding-0) var(--padding-0)
     271.39999999999964px;
   gap: 42.84700012207031px;
   max-width: 100%;
 }
 .component-167 {
-  margin-left: -1153.5px;
-  width: 6548.9px;
+  /* margin-left: -1153.5px; */
+  width: 1900px;
   flex: 1;
-  overflow: hidden;
+  /* overflow: hidden; */
   justify-content: flex-end;
   padding: 28.600000000000364px var(--padding-0) 28.899999999999636px;
   max-width: 2977%;
@@ -9754,6 +9756,26 @@
   font-size: var(--font-size-mid-1);
   font-family: var(--font-poppins);
 }
+
+@keyframes slide {
+  from{
+    transform: translateX(0);
+  }
+  to{
+    transform: translateX(-100%);
+  }
+  
+}
+
+.logos:hover .logos-slide{
+  animation-play-state: paused;
+}
+
+.logos-slide{
+
+  animation: 6s slide infinite linear;
+}
+
 .download-syllabus3 {
   flex: 1;
   position: relative;
@@ -12898,7 +12920,7 @@
 .test01-1-parent {
   align-self: stretch;
   width: 1559.7px;
-  overflow-x: auto;
+  /* overflow-x: auto; */
   flex-shrink: 0;
   flex-direction: row;
   padding: var(--padding-17xl) var(--padding-11xl) 36.70000000000073px
@@ -12907,7 +12929,7 @@
   gap: 39.99047619047624px;
   max-width: 100%;
 }
-.component-98,
+/* .component-98, */
 .love-from-our-alumni-parent,
 .test01-1-parent {
   display: flex;
@@ -13866,7 +13888,7 @@
     padding-right: var(--padding-308xl);
     box-sizing: border-box;
   }
-  .component-98 {
+  /* .component-98 { */
     padding-left: var(--padding-21xl);
     box-sizing: border-box;
   }
